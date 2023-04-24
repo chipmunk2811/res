@@ -1,0 +1,16 @@
+@media (max-width: 640px) {
+	.box-wrapper .col-4 {
+		width:  100% !important;
+	}
+
+	.content {
+		width:  auto !important;
+	}
+	.box-wrapper{
+		margin-bottom: 10px;
+	}
+	.box-wrapper{
+		margin: 40px auto 0;
+		width: 300px;
+	}
+}

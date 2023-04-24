@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import "base.css";
+@import "fonts.css";
+/*==========================================================================*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*//////                                                              //////*/
+/*//////  Copyright (C) 2009 株式会社フリーセル All Rights Reserved.  //////*/
+/*//////                                                              //////*/
+/*//////////////////////////////////////////////////////////////////////////*/
+/*                                                                          */
+/*    base.css  --> スタイルの初期設定を行うため、変更しないで下さい。      */
+/*    fonts.css --> フォントの初期設定を行うため、変更しないで下さい。      */
+/*                                                                          */
+/*==========================================================================*/
+
+/*==========================================================================*/
+/*                           Common-Setting                                 */
+/*==========================================================================*/
+
+/* 基本タグのフォントサイズを指定（12px -> 120% or 1.2em ） */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button,
+textarea,
+select,
+p,
+blockquote,
+th,
+td,
+pre,
+address,
+li,
+dt,
+dd {
+	font-size: 140%;
+}
+
+img {
+	vertical-align: bottom;
+}
+
+h1 {}
+
+/* Header内で設定 */
+h2 {}
+
+h3 {}
+
+h4 {}
+
+a {
+	color: #328AD1;
+}
+
+a:hover,
+a:active {
+	color: #328AD1;
+	text-decoration: none;
+}
+
+a:visited {}
+
+ul {}
+
+li {}
+
+dl {}
+
+dt {}
+
+dd {}
+
+table {
+	width: 100%;
+}
+
+th,
+td {}
+
+th {}
+
+td {}
+
+p {}
+
+/* style
+------------------------------------------------------------------------*/
+
+/***** Custom Css *****/
+.text-center {
+	text-align: center;
+}
+
+.wrapper {
+	background-color: #f2fafe;
+	padding: 60px;
+}
+
+.content>h1 {
+	color: #0769b2;
+	font-size: 60px;
+}
+
+.content::before {
+	background-color: #65a9dc;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	content: "";
+	height: 6px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.content {
+	background-color: #d4eeff;
+	border-radius: 10px;
+	box-shadow: 0 0 5px rgba(139, 163, 171, 0.7);
+	padding: 30px;
+	position: relative;
+	width: 1000px;
+	margin: 0 auto;
+	font-family: "Times New Roman";
+}
+
+.box-wrapper>.col-4 {
+	width: 30.33%;
+	padding-left: 15px;
+	padding-right: 15px;
+	float: left;
+}
+
+.box-wrapper .box-content-wrapper {
+	border: 1px solid #5586bd;
+	border-radius: 10px;
+	padding: 25px;
+	background-color: #fff;
+}
+
+.box-wrapper>.col-4.last {
+	padding-right: 0;
+}
+
+.box-wrapper {
+	margin-top: 40px;
+}
+
+.box-content h2.box-title {
+	color: #1285db;
+	font-size: 28px;
+	margin: 20px 0;
+	text-align: center;
+}
+
+.box-content p.box-description {
+	color: #000000;
+	font-size: 20px;
+	margin-bottom: 20px;
+	text-align: justify;
+}
+
+.box-btn a {
+	border: 1px solid #3d62a0;
+	border-radius: 5px;
+	color: #fff;
+	display: block;
+	font-size: 20px;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	/* fallback */
+	background-color: #3d63a1;
+	/* Safari 4-5, Chrome 1-9 */
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3d63a1), to(#6299cc));
+	/* Safari 5.1, Chrome 10+ */
+	background: -webkit-linear-gradient(top, #6299cc, #3d63a1);
+	/* Firefox 3.6+ */
+	background: -moz-linear-gradient(top, #6299cc, #3d63a1);
+	/* IE 10 */
+	background: -ms-linear-gradient(top, #6299cc, #3d63a1);
+	/* Opera 11.10+ */
+	background: -o-linear-gradient(top, #6299cc, #3d63a1);
+	transition: all 0.5s ease;
+}
+
+.box-btn a:hover {
+	opacity: 0.8;
+}
+
+.orange-color-change {
+	color: #e46c0a !important;
+}
+
+.clearboth {
+	clear: both;
+}
+
+.text-color-change {
+	color: #e46c0a !important;
+}
+
+.hide-div {
+	visibility: hidden;
+}
+
+/***** End Custom Css *****/
+
+/***** Responsive Css *****/
+@media only screen and (min-width: 980px) and (max-width: 1199px) {}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {}
+
+@media only screen and (min-width: 641px) and (max-width: 767px) {
+}
+
+@media (max-width: 640px) {
+	.box-wrapper .col-4 {
+		width:  100% !important;
+	}
+
+	.content {
+		width:  auto !important;
+	}
+	.box-wrapper{
+		margin-bottom: 10px;
+	}
+	.box-wrapper{
+		margin: 40px auto 0;
+		width: 300px;
+	}
+}
+
+@media only screen and (max-width: 479px) {}
+
+/***** End Responsive Css *****/
